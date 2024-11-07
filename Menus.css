@@ -1,0 +1,129 @@
+/** Menús CSS **/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: "Texto_Shiny";
+    src: url(./Fonts/Super\ Shiny.ttf);
+}
+h2{
+    font-family: "Texto_Shiny";
+    font-size: 3.2rem;
+}
+
+.Menu{
+    width: 70%;
+    margin: auto;
+}
+.Menu a{
+    text-decoration: none;    
+    background-color: antiquewhite;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.Menu a:hover{
+    background-color: brown;
+    color: white;
+}
+
+.MenuFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.MenuFlex a{
+    flex-grow: 1;
+}
+
+main{height: 30rem;}
+.MenuGrid nav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/** LISTAS **/
+section{
+    background-color: aquamarine;
+    
+    padding: 2rem;
+    border: 0.2rem dotted;
+}
+
+ol li{
+    list-style-type:lower-roman;
+}
+ul li{
+    list-style-type:none;
+    background-image: url(./Imagenes/Mario.png);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-x: -0.5rem;
+    padding: 0 0 0 2.5rem;
+}
+
+li:hover{
+    font-size: 2rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 70%;
+    margin: 1rem auto 1rem auto;
+    gap: 20px;
+}
+
+/** GALERIA DE IMÁGENES **/
+.galeria{
+    display: grid;    
+    grid-template-columns: repeat(3,1fr);
+    width: 70%;
+    margin: 20px auto 20px auto; 
+    gap: 10px;
+}
+.galeria img{
+    max-width: 100%;
+    border: 5px solid aquamarine;
+    transition: all ease 1s;
+}
+.galeria img:hover{
+    border: 5px solid rgb(78, 168, 138);
+    opacity: 0.7;
+    transform: scale(1.1) rotate(5deg) translate(10px,10px);
+}
+.galeria iframe{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/** GRADIENTES **/
+.gradiente{
+    height: 150px;
+    width: 70%;
+    margin: 2rem auto 2rem auto;
+}
+.gradiente1{ 
+    background-image: linear-gradient(to right, transparent 50%,#037bc0 50%, #037bc0 100%), url(./Imagenes/Paisaje.jpg);
+    background-size: 100%, 100rem; /* el primer tamaño es para el gradiente y el 2º es para la imagen */
+    padding: 8rem 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+}
+.gradiente1 h3{
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+/* Octubre 2024, Moisés Fernández Ruiz */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header,footer{
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 7px 10px black;
+    text-shadow: 1px -1px 2px black;
+    color: white;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+img{
+    width: 10%;
+}
+body{background-color: aqua;}
+main{
+    background-color:brown;
+    width: 80%;
+    height: 400px;
+    margin: 10px auto 10px auto;
+    border-style: double;
+    border-width: 5px 0px 10px 30px;
+}
+article{}
+section{}
+aside{}
+

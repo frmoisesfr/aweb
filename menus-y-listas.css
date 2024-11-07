@@ -1,0 +1,57 @@
+/** Menús y Listas CSS **/
+
+/** GLOBALES **/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+footer{
+    position:fixed;
+    bottom: 0px;
+    text-align: center;
+}
+ /** Menús **/
+ /** Menú con Flotantes**/
+.menu a{
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: bisque;
+    color: black;
+}
+.menuH a{
+    float: left;
+    width: 25%;
+}
+.menuH{
+    border: 3px solid black;
+    overflow: auto;
+}
+
+.menuV a{
+    display: block;
+}
+.menuV{
+    border: 5px double red;
+    float: left;
+    width: 30%;
+}
+
+/** Menú con FlexBox**/
+.menuH-flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 10%;
+    margin: 20px 0px 0px 20px;
+}
+
+.preformateado{
+    float: left;
+}
